@@ -1,30 +1,15 @@
-[![Typing SVG](https://readme-typing-svg.herokuapp.com?color=%2336BCF7&lines=Lab+2)](https://git.io/typing-svg)
-### Info for files and directores: ###
+В папке Stats лежат результаты измерений
 
-* Data directory        - values from two matrices and result values
+Задание: 
+Модифицировать программу из л/р №1 для параллельной работы по технологии OpenMP.
 
-* Stats directory       - directory with satistics files
-
-* PP_lab2             - contains cpp code
-
-----
-
-### Task: Modify the program from l/w №1 for parallel work using OpenMP technology. ###
-
-----
-
-Work done in release x64:
-
-![](/Stats/image.png) 
-
-Work done in release x64 with 6 threads, because my cpu has 6 logical cores:
+Протестировал на нескольких логических ядрах, вплоть до 6
 
 ![](/Stats/omp_6_threads.jpg) 
 
-The difference in the number of threads:
+Зависимость от кол-во использованных ядер
 
 ![](/Stats/number_of_threads.jpg)
 
-----
-
-### Conclusion: With the help of OpenMP technology, two square matrices of 1000 by 1000 were first created, and then the result of multiplying these two matrices was calculated, and the time spent on multiplication was also measured. The most efficient was to use 6 threads (time ≈0.807 sec). ###
+Вывод:
+Использование многопоточности позволило существенно сократить время выполнения умножения матриц.
